@@ -1,0 +1,53 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+    height: 100vh;
+    padding: 0 10%;
+    position: relative;
+  }
+  
+  .home-text {
+    position: relative;
+    top:-5%;
+    max-width: 300px;
+  }
+  
+  .home-text h1 {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .home-text h1 span {
+    color: #ff9800; /* Accent color */
+  }
+  
+  .home-text p {
+    font-size: 15px;
+    margin: 10px 0 20px;
+    color: #555;
+  }
+  
+  .get-started-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Positioning the SVG */
+  .home-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px; /* Adjust size */
+    z-index: -1; /* Put behind content */
+  }
+  
