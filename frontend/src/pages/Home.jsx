@@ -1,15 +1,15 @@
 import React from "react";
 import MyLogo from "../assets/home.svg";
 import "../styles/Home.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-const handleNavigate = () => {
-    console.log("Navigating to Test Page");
-    navigate("/test"); 
-};
+// const handleNavigate = () => {
+//     console.log("Navigating to Test Page");
+//     navigate("/test"); 
+// };
   return (
     <div className="home-container">
       {/* Fixed Top-Right SVG */}
@@ -20,8 +20,7 @@ const handleNavigate = () => {
         <h1>Hello, <span>Spotlight!</span></h1>
         <p>Your journey to building an outstanding portfolio starts here.  
            Showcase your skills, experience, and projects in a beautiful way.</p>
-        <button className="get-started-btn"
-        onClick={handleNavigate}>Get Started</button>
+        <button className="get-started-btn">Get Started</button>
       </div>
     </div>
   );
