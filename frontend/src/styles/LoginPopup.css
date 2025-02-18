@@ -1,0 +1,110 @@
+/* Fullscreen overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Popup box */
+  .popup-content {
+    background: var(--popup-bg); /* Theme-based */
+    color: var(--popup-text);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 350px; /* Wider for better alignment */
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input fields */
+  .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text fields properly */
+    width: 100%;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background: var(--input-bg);
+    color: var(--input-text);
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Login button */
+  .login-btn {
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  
+  .login-btn:hover {
+    background: var(--button-hover);
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--close-btn);
+  }
+  
+  /* Dark Mode */
+  .dark .popup-content {
+    --popup-bg: #1e1e1e;
+    --popup-text: #ffffff;
+    --input-bg: #2a2a2a;
+    --input-text: #ffffff;
+    --input-border: #444;
+    --button-bg: #3a3a3a;
+    --button-text: #ffffff;
+    --button-hover: #555;
+    --close-btn: #ffffff;
+  }
+  
+  /* Light Mode */
+  .popup-content {
+    --popup-bg: #ffffff;
+    --popup-text: #000000;
+    --input-bg: #f8f8f8;
+    --input-text: #000000;
+    --input-border: #ddd;
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+    --button-hover: #0056b3;
+    --close-btn: #333;
+  }
+  
